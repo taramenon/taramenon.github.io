@@ -16,7 +16,12 @@
             <span class="name">Tara P. Menon</span>
         </div>
         <nav>
-            <ul>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="nav-links">
                 <li><a href="writing.html">Writing</a></li>
                 <li><a href="research-projects.html">Research & Projects</a></li>
                 <li><a href="speaking.html">Speaking</a></li>
@@ -48,5 +53,13 @@
             <a href="https://scholar.google.com/citations?user=r0YZgu0AAAAJ&hl=en" target="_blank"><img src="google-scholar-icon.png" alt="Google Scholar"></a>
         </div>
     </footer>
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.getElementById('nav-links');
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            menuIcon.classList.toggle('change');
+        });
+    </script>
 </body>
 </html>
