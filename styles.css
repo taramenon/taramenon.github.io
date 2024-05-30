@@ -1,0 +1,187 @@
+body {
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #fff;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.trademark {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #ff4500; /* Changed to the color of the "Publications" button */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 1.5em;
+    font-weight: bold;
+    white-space: nowrap; /* Ensure the name stays on one line */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.intro img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.intro-text h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.intro-text p {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds space between the buttons */
+}
+
+.buttons .btn {
+    display: inline-block;
+    width: 100px; /* Increased width */
+    height: 100px; /* Increased height */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #000;
+    line-height: 100px; /* Adjusted to match height */
+    font-size: 1em; /* Adjust font size */
+    background: #ffa500;
+    transition: background 0.3s ease; /* Adds a transition effect for background color */
+}
+
+.buttons .btn:hover {
+    background: #e69500; /* Changes the background color slightly on hover */
+}
+
+.buttons .publications {
+    background: #ff4500;
+}
+
+.buttons .publications:hover {
+    background: #e03e00;
+}
+
+.buttons .projects {
+    background: #00ced1;
+}
+
+.buttons .projects:hover {
+    background: #00b8b8;
+}
+
+#publications {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+#publications h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#publications h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px 0;
+}
+
+.divider {
+    width: 80%;
+    height: 5px;
+    background: #ff4500;
+    margin: 20px auto;
+}
+
+#publications ul, #publications ol {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#publications ul li, #publications ol li {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #fff;
+    font-size: 1em;
+    color: #666;
+}
+
+footer a {
+    color: #666;
+    text-decoration: none;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-media img {
+    width: 30px;
+    height: 30px;
+}
