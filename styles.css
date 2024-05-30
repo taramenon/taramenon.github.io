@@ -12,6 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1em;
 }
 
 .branding {
@@ -23,7 +24,7 @@ header {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background: #ff4500; /* Changed to the color of the "Publications" button */
+    background: #ff4500;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -35,7 +36,11 @@ header {
 .name {
     font-size: 1.5em;
     font-weight: bold;
-    white-space: nowrap; /* Ensure the name stays on one line */
+    white-space: nowrap;
+}
+
+nav {
+    position: relative;
 }
 
 nav ul {
@@ -43,6 +48,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -52,6 +58,56 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #333;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #fff;
+        width: 100%;
+        display: none;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
 }
 
 .intro {
@@ -86,25 +142,25 @@ nav ul li a {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Adds space between the buttons */
+    gap: 20px;
 }
 
 .buttons .btn {
     display: inline-block;
-    width: 100px; /* Increased width */
-    height: 100px; /* Increased height */
+    width: 100px;
+    height: 100px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
     color: #000;
-    line-height: 100px; /* Adjusted to match height */
-    font-size: 1em; /* Adjust font size */
+    line-height: 100px;
+    font-size: 1em;
     background: #ffa500;
-    transition: background 0.3s ease; /* Adds a transition effect for background color */
+    transition: background 0.3s ease;
 }
 
 .buttons .btn:hover {
-    background: #e69500; /* Changes the background color slightly on hover */
+    background: #e69500;
 }
 
 .buttons .publications {
