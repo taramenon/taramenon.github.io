@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing | Tara P. Menon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="kerala-scene"></div>
+    <nav class="container">
+        <a href="index.html" class="logo-text">Tara P. Menon.</a>
+        <div class="hamburger" id="hamburger"><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="writing.html">Writing</a></li>
+            <li><button class="theme-toggle" id="theme-btn"><span class="sun">☀</span><span class="moon">☾</span></button></li>
+        </ul>
+    </nav>
+
+    <main class="container" style="padding-top: 5rem;">
+        <h1 style="font-size: 3rem; margin-bottom: 3rem;">Editorials & Articles</h1>
+        
+        <div class="list-item">
+            <span class="meta">2024</span>
+            <div class="content">
+                <h3>Streamlining Public Benefits Access is a Must to Address Poverty</h3>
+                <p>The Health Care Blog</p>
+            </div>
+        </div>
+
+        <div class="list-item">
+            <span class="meta">2020</span>
+            <div class="content">
+                <h3>My Imposter Syndrome Improved After I Got Comfortable With Failure</h3>
+                <p>Teen Vogue</p>
+            </div>
+        </div>
+
+        <div class="list-item">
+            <span class="meta">2020</span>
+            <div class="content">
+                <h3>Treatment Before Vaccine: How These Two Medical Scientists Hope to Buy Time for COVID-19 Patients</h3>
+                <p>StartUp Health</p>
+            </div>
+        </div>
+
+        <div class="list-item">
+            <span class="meta">2020</span>
+            <div class="content">
+                <h3>Doctor.com launches VirtualVisit, a Free Telemed Platform</h3>
+                <p>StartUp Health</p>
+            </div>
+        </div>
+
+        <div class="list-item">
+            <span class="meta">2020</span>
+            <div class="content">
+                <h3>How to Build an Adaptable Team During Uncertain Times</h3>
+                <p>StartUp Health</p>
+            </div>
+        </div>
+
+        <div class="list-item">
+            <span class="meta">2020</span>
+            <div class="content">
+                <h3>This Founder Is Fighting Medication Non-Adherence With a Smart Pill Bottle</h3>
+                <p>StartUp Health</p>
+            </div>
+        </div>
+
+        <div class="list-item">
+            <span class="meta">2020</span>
+            <div class="content">
+                <h3>How Joint Academy CEO Jakob Dahlberg Is Transforming Osteoarthritis Care</h3>
+                <p>StartUp Health</p>
+            </div>
+        </div>
+
+        <div class="list-item">
+            <span class="meta">2021</span>
+            <div class="content">
+                <h3>Learning beyond classrooms and into virtual realms</h3>
+                <p>NSM Today</p>
+            </div>
+        </div>
+
+        <div class="list-item">
+            <span class="meta">2019</span>
+            <div class="content">
+                <h3>How AI and Haptics Could Revolutionize VR</h3>
+                <p>VRScout</p>
+            </div>
+        </div>
+
+        <div class="list-item">
+            <span class="meta">2017</span>
+            <div class="content">
+                <h3>The Link Between Autism, Baby Teeth, and Lead Levels</h3>
+                <p>Huffington Post Science</p>
+            </div>
+        </div>
+
+        <div class="list-item">
+            <span class="meta">2016</span>
+            <div class="content">
+                <h3>How Marijuana Can (Potentially) Help Fight Against Alzheimer’s</h3>
+                <p>Huffington Post Science</p>
+            </div>
+        </div>
+
+        <div class="list-item">
+            <span class="meta">2016</span>
+            <div class="content">
+                <h3>Where The Brain And Panoramic Memory Meet</h3>
+                <p>Huffington Post Science</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        const themeBtn = document.getElementById('theme-btn');
+        const html = document.documentElement;
+        const ham = document.getElementById('hamburger');
+        const nav = document.getElementById('nav-links');
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', savedTheme);
+        themeBtn.addEventListener('click', () => {
+            const newTheme = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme); localStorage.setItem('theme', newTheme);
+        });
+        ham.addEventListener('click', () => { nav.classList.toggle('active'); });
+    </script>
+</body>
+</html>

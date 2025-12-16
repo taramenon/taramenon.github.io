@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tara P. Menon | MD Candidate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="kerala-scene"></div>
+
+    <nav class="container">
+        <a href="index.html" class="logo-text">Tara P. Menon.</a>
+        
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li>
+                <button class="theme-toggle" id="theme-btn" aria-label="Toggle Theme">
+                    <span class="sun">☀</span><span class="moon">☾</span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container hero">
+        <p class="overline">MD Candidate • Virginia Tech Carilion</p>
+        <h1>
+            Bridging the gap between<br>
+            <span class="accent">clinical oncology</span>, policy,<br>
+            and systemic innovation.
+        </h1>
+        <p>
+            I am an aspiring physician-innovator and medical journalist. My work explores the future of cancer care, from molecular research to global health equity.
+        </p>
+        
+        <div class="btn-group">
+            <a href="projects.html" class="btn-primary">Explore Work</a>
+            <a href="Menon_Tara_CV.pdf" target="_blank" class="btn-secondary">View Curriculum Vitae</a>
+        </div>
+    </main>
+
+    <section class="container" style="padding-bottom: 8rem;">
+        <div class="divider"></div>
+        <h2 style="font-size: 2.5rem; margin-bottom: 3rem;">Selected Works</h2>
+        
+        <a href="#" class="list-item">
+            <span class="meta">2025</span>
+            <div class="content">
+                <h3>Intersectionality of Cancer Disparities in South Asia</h3>
+                <p>The Lancet Global Health</p>
+            </div>
+            <div class="arrow">↗</div>
+        </a>
+
+        <a href="#" class="list-item">
+            <span class="meta">2025</span>
+            <div class="content">
+                <h3>Phase I, Arms Crossed</h3>
+                <p>JAMA "Poetry in Medicine"</p>
+            </div>
+            <div class="arrow">↗</div>
+        </a>
+        
+        <a href="#" class="list-item">
+            <span class="meta">Current</span>
+            <div class="content">
+                <h3>News & Views Editor</h3>
+                <p>npj Digital Medicine</p>
+            </div>
+            <div class="arrow">↗</div>
+        </a>
+    </section>
+
+    <footer class="container">
+        <div class="footer-grid">
+            <div>
+                <p class="footer-label">Contact</p>
+                <a href="mailto:tarapm@vt.edu" class="footer-email">tarapm@vt.edu</a>
+            </div>
+            <div>
+                <p class="footer-label">Network</p>
+                <a href="https://www.linkedin.com/in/tmenon/" target="_blank" class="footer-link">LinkedIn</a>
+                <a href="https://x.com/tmenon12" target="_blank" class="footer-link">Twitter/X</a>
+                <a href="https://scholar.google.com/citations?user=r0YZgu0AAAAJ&hl=en" target="_blank" class="footer-link">Google Scholar</a>
+            </div>
+        </div>
+        <p class="copyright">
+            © 2025 Tara P. Menon. Made with love in Roanoke & Kerala.
+        </p>
+    </footer>
+
+    <script>
+        const themeBtn = document.getElementById('theme-btn');
+        const html = document.documentElement;
+        const ham = document.getElementById('hamburger');
+        const nav = document.getElementById('nav-links');
+
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', savedTheme);
+
+        themeBtn.addEventListener('click', () => {
+            const newTheme = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        ham.addEventListener('click', () => { nav.classList.toggle('active'); });
+    </script>
+</body>
+</html>
